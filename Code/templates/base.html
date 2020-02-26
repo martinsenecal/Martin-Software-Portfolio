@@ -39,7 +39,7 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="/">
                     <i class="fas fa-home"></i>
                 </a>
@@ -59,11 +59,11 @@
                     Experience
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Education</a>
-                    <a class="dropdown-item" href="#">Work</a>
-                    <a class="dropdown-item" href="#">Projects</a>
+                    <a class="dropdown-item" href="/experience">Education</a>
+                    <a class="dropdown-item" href="/experience">Work</a>
+                    <a class="dropdown-item" href="/experience">Projects</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Other</a>
+                    <a class="dropdown-item" href="/experience">Other</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -84,26 +84,53 @@
 {% block body %}{% endblock %}
 
 
-<div id="footer">
-    <nav class="navbar fixed-bottom navbar-light" style="background-color: #2F4F4F" ;>
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4 bg-blue" style="background-color: #004aad" ;">
 
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="/about"> Martin Senécal</a>
-        </div>
+  <!-- Footer Elements -->
+  <div class="container">
 
-        <i class="fab fa-facebook fa-lg"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fas fa-envelope-open-text"></i>
-        <i class="fas fa-phone"></i>
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+       <li class="list-inline-item">
+
+          <i class="fab fa-linkedin-in"> </i>
+
+      </li>
+         <li class="list-inline-item">
+
+          <i class="fab fa-github"> </i>
+
+      </li>
+        <li class="list-inline-item">
+
+          <i class="fab fa-facebook-f"> </i>
+
+      </li>
+
+      <li class="list-inline-item">
+
+           <i class="fas fa-envelope-open-text"></i>
 
 
-    </nav>
+      </li>
 
 
-</div>
+    </ul>
+    <!-- Social buttons -->
 
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://github.com/martinsenecal">
+        <p id="link"> © 2020 Copyright: Designed & Built by Martin Senécal </p>
+    </a>
+  </div>
+
+
+</footer>
 
 </body>
 

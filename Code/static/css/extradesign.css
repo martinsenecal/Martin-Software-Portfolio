@@ -17,3 +17,21 @@
   margin-top: 10px;
   margin-left: 118px;
 }
+.logo{
+
+  display: inline-block;
+  height: 40px;
+  margin-right: 2px;
+  padding-bottom: 5px;
+
+}
+.elementExperience{
+  width: 40%;
+  text-align: justify;
+  margin-top: 50px;
+  margin-left: 280px;
+}
+.headingExperience{
+  margin-top: 20px;
+  margin-left: 200px;
+}

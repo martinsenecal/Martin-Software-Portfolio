@@ -18,9 +18,9 @@ def skills():
     return render_template("skills.html")
 
 
-@app.route('/education')
+@app.route('/experience')
 def education():
-    return render_template("education.html")
+    return render_template("experience.html")
 
 
 
