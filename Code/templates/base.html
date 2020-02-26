@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- My own CSS Files-->
+    <link rel="stylesheet" href="/static/css/basedesign.css">
+    <script src="https://kit.fontawesome.com/e319096bd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/extradesign.css">
+
+    {% block css %}{% endblock %}
+</head>
+
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-blue" style="background-color: #004aad" ;>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+             <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/skills">Skills</a>
+            </li>
+
+            <!--/routename#idname -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Experience
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Education</a>
+                    <a class="dropdown-item" href="#">Work</a>
+                    <a class="dropdown-item" href="#">Projects</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Other</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Connect</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+
+
+            <a href="static/martin-resume.pdf" class="button">
+                <button type="button" class="btn btn-secondary">Resume</button>
+            </a>
+
+        </form>
+    </div>
+</nav>
+
+{% block body %}{% endblock %}
+
+
+<div id="footer">
+    <nav class="navbar fixed-bottom navbar-light" style="background-color: #2F4F4F" ;>
+
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="/about"> Martin Senécal</a>
+        </div>
+
+        <i class="fab fa-facebook fa-lg"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-envelope-open-text"></i>
+        <i class="fas fa-phone"></i>
+
+
+    </nav>
+
+
+</div>
+
+
+</body>
+
+</html>

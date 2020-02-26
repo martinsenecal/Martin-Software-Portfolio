@@ -1,0 +1,19 @@
+
+#profileImage{
+  float: right;
+  margin-right: 150px;
+  margin-top: 75px;
+  display: inline-block;
+  height: 500px;
+  border-radius: 10%;
+}
+#aboutMe{
+  width: 40%;
+  text-align: justify;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+#skillsTitle{
+  margin-top: 10px;
+  margin-left: 118px;
+}

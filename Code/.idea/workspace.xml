@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed4b6741-b136-42cf-b4e3-6378d1bd2192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/basedesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/basedesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1YHKFMxs0Mw8glwgTu0GE35xSse" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="education.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Code/templates/education.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Code" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
+      <module name="Code" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="Code" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="JavaScript Debug.education.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed4b6741-b136-42cf-b4e3-6378d1bd2192" name="Default Changelist" comment="" />
+      <created>1582593974013</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582593974013</updated>
+      <workItem from="1582593983132" duration="1000000" />
+      <workItem from="1582600108842" duration="2135000" />
+      <workItem from="1582602482838" duration="259000" />
+      <workItem from="1582670438952" duration="3440000" />
+      <workItem from="1582681144713" duration="7200000" />
+      <workItem from="1582688997193" duration="732000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2334" y="-212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582594257856">
+      <screen x="1440" y="-330" width="2560" height="1005" />
+    </state>
+    <state x="2334" y="-212" key="#com.intellij.execution.impl.EditConfigurationsDialog/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582594257856" />
+    <state x="3107" y="-59" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582688394250">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state x="3107" y="-59" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688394250" />
+    <state width="1946" height="150" key="GridCell.Tab.0.bottom" timestamp="1582689750989">
+      <screen x="1440" y="-330" width="2560" height="1005" />
+    </state>
+    <state width="668" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582674684316" />
+    <state width="751" height="181" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1582673579706" />
+    <state width="1946" height="150" key="GridCell.Tab.0.bottom/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582689750989" />
+    <state width="1219" height="169" key="GridCell.Tab.0.bottom/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688979994" />
+    <state width="1219" height="375" key="GridCell.Tab.0.bottom/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902226" />
+    <state width="1946" height="150" key="GridCell.Tab.0.center" timestamp="1582689750988">
+      <screen x="1440" y="-330" width="2560" height="1005" />
+    </state>
+    <state width="668" height="181" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582674684316" />
+    <state width="751" height="181" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1582673579706" />
+    <state width="1946" height="150" key="GridCell.Tab.0.center/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582689750988" />
+    <state width="1219" height="169" key="GridCell.Tab.0.center/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688979993" />
+    <state width="1219" height="375" key="GridCell.Tab.0.center/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902223" />
+    <state width="1946" height="150" key="GridCell.Tab.0.left" timestamp="1582689750988">
+      <screen x="1440" y="-330" width="2560" height="1005" />
+    </state>
+    <state width="668" height="181" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582674684315" />
+    <state width="751" height="181" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1582673579705" />
+    <state width="1946" height="150" key="GridCell.Tab.0.left/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582689750988" />
+    <state width="1219" height="169" key="GridCell.Tab.0.left/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688979992" />
+    <state width="1219" height="375" key="GridCell.Tab.0.left/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902220" />
+    <state width="1946" height="150" key="GridCell.Tab.0.right" timestamp="1582689750988">
+      <screen x="1440" y="-330" width="2560" height="1005" />
+    </state>
+    <state width="668" height="181" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582674684316" />
+    <state width="751" height="181" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1582673579706" />
+    <state width="1946" height="150" key="GridCell.Tab.0.right/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582689750988" />
+    <state width="1219" height="169" key="GridCell.Tab.0.right/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688979993" />
+    <state width="1219" height="375" key="GridCell.Tab.0.right/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902225" />
+    <state width="1219" height="375" key="GridCell.Tab.1.bottom" timestamp="1582688906380">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.1.bottom/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906380" />
+    <state width="1219" height="375" key="GridCell.Tab.1.center" timestamp="1582688906379">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.1.center/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906379" />
+    <state width="1219" height="375" key="GridCell.Tab.1.left" timestamp="1582688906379">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.1.left/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906379" />
+    <state width="1219" height="375" key="GridCell.Tab.1.right" timestamp="1582688906380">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.1.right/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906380" />
+    <state width="1219" height="375" key="GridCell.Tab.2.bottom" timestamp="1582688906382">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.2.bottom/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906382" />
+    <state width="1219" height="375" key="GridCell.Tab.2.center" timestamp="1582688906381">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.2.center/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906381" />
+    <state width="1219" height="375" key="GridCell.Tab.2.left" timestamp="1582688906381">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.2.left/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906381" />
+    <state width="1219" height="375" key="GridCell.Tab.2.right" timestamp="1582688906382">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state width="1219" height="375" key="GridCell.Tab.2.right/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906382" />
+    <state x="2852" y="-82" key="com.intellij.ide.util.TipDialog" timestamp="1582688996980">
+      <screen x="1440" y="-353" width="2560" height="1080" />
+    </state>
+    <state x="794" y="247" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1582670561641" />
+    <state x="794" y="243" key="com.intellij.ide.util.TipDialog/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582681147056" />
+    <state x="2852" y="-82" key="com.intellij.ide.util.TipDialog/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688996980" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Code$Code.coverage" NAME="Code Coverage Results" MODIFIED="1582688660453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Code$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1582689712366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
