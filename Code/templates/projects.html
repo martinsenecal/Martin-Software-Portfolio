@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block css %}
+
+{% endblock css %}
+
+{% block title %} About {% endblock %}
+{% block body %}
+
+    <!-- Page Content -->
+    <div class="container">
+       <h1 class="display-3 text-light">My Projects</h1>
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="static/images/bloom.png" alt="Overview of Bloom">
+                    <div class="card-body">
+                        <h4 class="card-title text-dark">Bloom</h4>
+                        <h5 class="card-title text-dark">Personal Project</h5>
+                        <p class="card-text text-dark text-justify">Conceptualized and built Bloom to become a website
+                            that helps students to communicate
+                            between each other for school projects. Designed and implemented the entire website UI by
+                            using <strong>CSS/HTML</strong>, <strong>Bootstrap</strong>,
+                            and <strong>Meteor </strong> (a <strong>JS</strong> framework) for the backend.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/martinsenecal/bloom-collaborative-platform" class="btn btn-primary">Find
+                            Out More!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="static/images/reviewbot.png" alt="ReviewBot Logo">
+                    <div class="card-body">
+                        <h4 class="card-title text-dark">ReviewBot</h4>
+                        <h5 class="card-title text-dark">Yale Hack, UYale, USA.</h5>
+                        <p class="card-text  text-dark text-justify">Built an application that compiles customer
+                            feedback for a given business in a specific location.</p>
+                        <p class="card-text  text-dark text-justify"> Used <strong>Google Cloud platform</strong>
+                            to perform a natural language API.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/martinsenecal/ReviewBot---Yale-Hackathon" class="btn btn-primary">Find
+                            Out More!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="static/images/android.png" alt="Android Logo">
+                    <div class="card-body">
+                        <h4 class="card-title text-dark">Handshake</h4>
+                        <h5 class="card-title text-dark">HackTheNorth, UWaterloo, Canada</h5>
+
+                        <p class="card-text text-dark text-justify">Biggest Hackathon in Canada</p>
+                        <p class="card-text text-dark text-justify">Built an app on <strong>Android Studio
+                            (JAVA)</strong> and <strong>Firebase</strong> to help
+                            people connect with each other by sharing their social medias via a barcode and/or NFC.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/martinsenecal/Handshake-HackTheNorth-Waterloo-"
+                           class="btn btn-primary">Find Out More!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="static/images/java.png" alt="Java Logo">
+                    <div class="card-body">
+                        <h4 class="card-title text-dark">Slick 2D Game</h4>
+                        <h5 class="card-title text-dark">College Project</h5>
+                        <p class="card-text text-dark text-center">Built a game using Slick2D (on <strong>Java</strong>)
+                        </p>
+                        <img id="gif" src="static/images/gameanimation.gif" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/martinsenecal/CollegeProject-Game_with_Slick2D"
+                           class="btn btn-primary">Find Out More!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+            <h1 class="display-4 text-dark">Other Projects</h1>
+            <p class="lead text-dark">You can also go take a look at my github for other projects. Although I'm currently a student, I'm always looking for new projects! My inbox is always open!</p>
+            <a href="https://github.com/martinsenecal" class="btn btn-primary btn-lg">My GitHub Profile</a>
+        </header>
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+{% endblock %}

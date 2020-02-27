@@ -24,5 +24,15 @@ def education():
 
 
 
+@app.route('/projects')
+def projects():
+    return render_template("projects.html")
+
+@app.route('/connect')
+def connect():
+    return render_template("connect.html")
+
+
+
 if __name__ == '__main__':
     app.run()

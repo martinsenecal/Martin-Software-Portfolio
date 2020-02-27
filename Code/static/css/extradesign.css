@@ -1,37 +1,48 @@
 
 #profileImage{
   float: right;
-  margin-right: 150px;
-  margin-top: 75px;
+  margin-right: 8vw;
+  margin-top: 1vw;
   display: inline-block;
-  height: 500px;
+  height: 25vw;
   border-radius: 10%;
 }
 #aboutMe{
-  width: 40%;
+  width: 40vw;
   text-align: justify;
-  margin-top: 50px;
-  margin-left: 150px;
+  margin-top: 3vw;
+  margin-left: 5vw;
+  margin-bottom: 3vw;
+
 }
 #skillsTitle{
-  margin-top: 10px;
-  margin-left: 118px;
+  margin-top: 1vw;
+  margin-left: 5vw;
 }
 .logo{
 
   display: inline-block;
-  height: 40px;
-  margin-right: 2px;
+  height: 25px;
   padding-bottom: 5px;
 
 }
 .elementExperience{
-  width: 40%;
+  width: 50vw;
   text-align: justify;
-  margin-top: 50px;
-  margin-left: 280px;
+  margin-top: 10px;
+  margin-left: 15vw;
 }
-.headingExperience{
-  margin-top: 20px;
-  margin-left: 200px;
+#headingExperience{
+  margin-top: 2vw;
+  margin-left: 15vw;
+  color:white;
+}
+
+#gif{
+  width:15vw;
+
+}
+#textContact{
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
