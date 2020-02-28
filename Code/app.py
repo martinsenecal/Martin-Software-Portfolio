@@ -33,6 +33,12 @@ def connect():
     return render_template("connect.html")
 
 
+@app.route('/chatbot')
+def chatbot():
+    return render_template("chatbot.html")
+
+
+
 
 if __name__ == '__main__':
     app.run()

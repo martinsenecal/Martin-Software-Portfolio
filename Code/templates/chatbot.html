@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <!-- My own CSS Files-->
+    <link rel="stylesheet" href="/static/css/designbot.css">
+
+{% endblock css %}
+
+{% block title %} ChatBot {% endblock %}
+{% block body %}
+
+
+
+            <div class="container">
+            <header id="chatbotheader">
+                <h4>Marty: ChatBot</h4>
+                <p class="lead text-dark">
+                    Instructions: If you're lost, just write <code>!help </code>and I'll show you the list of the thing I can do!</p>
+            </header>
+
+            </div>
+
+
+
+        <div class="bodyMessage">
+
+
+            <div class="containerChat">
+                <img src="/static/images/minimartin.png" alt="Avatar" style="width:100%;">
+                <p>Hello. How are you today?</p>
+                <span class="time-right">15:00</span>
+            </div>
+
+            <div class="containerChat darker">
+                <img src="/static/images/dog.png" alt="Avatar" class="right" style="width:100%;">
+                <p>Hey! I'm fine. Thanks for asking!</p>
+                <span class="time-left">15:01</span>
+            </div>
+
+            <div class="containerChat">
+                <img src="/static/images/minimartin.png" alt="Avatar" style="width:100%;">
+                <p>Sweet! So, how can I help you today?</p>
+                <span class="time-right">15:02</span>
+            </div>
+
+            <div class="containerChat darker">
+                <img src="/static/images/dog.png" alt="Avatar" class="right" style="width:100%;">
+                <p>Can I see you resume please?</p>
+                <span class="time-left">15:05</span>
+            </div>
+
+        </div>
+
+{% endblock %}
