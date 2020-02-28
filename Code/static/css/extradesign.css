@@ -1,19 +1,24 @@
 
 #profileImage{
   float: right;
-  margin-right: 8vw;
+  margin-right: 2vw;
   margin-top: 1vw;
   display: inline-block;
-  height: 25vw;
+  height: 420px;
   border-radius: 10%;
 }
 #aboutMe{
+
   width: 40vw;
   text-align: justify;
   margin-top: 3vw;
   margin-left: 5vw;
   margin-bottom: 3vw;
 
+}
+#aboutcontainer{
+  background-color: white;
+  margin-bottom: 10px;
 }
 #skillsTitle{
   margin-top: 1vw;
@@ -39,8 +44,15 @@
 }
 
 #gif{
-  width:15vw;
+  width:200px;
 
+}
+td,th,thead{
+  text-align: center;
+}
+
+#skillsTitle{
+  text-align: center;
 }
 .colorLink{
   color: #004aad;
@@ -54,7 +66,7 @@
   background-color: #333333;
   border-radius: 5px;
 }
-.btncenter{
+#btncenter{
   text-align: center;
 }
 #btnchatbot{
@@ -74,7 +86,9 @@
 
 
 #formEmail{
-margin-left: 15vw;
+/*margin-left: 15vw;*/
+  text-align: center;
+  align-content: center;
 }
 /* Style the form - display items horizontally */
 .form-inline {
