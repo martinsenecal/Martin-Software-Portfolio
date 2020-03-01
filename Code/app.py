@@ -23,10 +23,10 @@ def education():
     return render_template("experience.html")
 
 
-
 @app.route('/projects')
 def projects():
     return render_template("projects.html")
+
 
 @app.route('/connect')
 def connect():
@@ -36,8 +36,6 @@ def connect():
 @app.route('/chatbot')
 def chatbot():
     return render_template("chatbot.html")
-
-
 
 
 if __name__ == '__main__':
