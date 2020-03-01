@@ -1,21 +1,32 @@
 
 #profileImage{
-  float: right;
-  margin-right: 2vw;
-  margin-top: 1vw;
-  display: inline-block;
-  height: 420px;
+
+
+  height: 400px;
+
   border-radius: 10%;
+
+}
+.alignImage{
+    display: flex;
+  justify-content: center;
 }
 #aboutMe{
 
-  width: 40vw;
+
   text-align: justify;
-  margin-top: 3vw;
-  margin-left: 5vw;
-  margin-bottom: 3vw;
+  
+
 
 }
+
+@media only screen and (max-width: 750px){
+  #profileImage{
+height:250px;
+  }
+
+}
+
 #aboutcontainer{
   background-color: white;
   margin-bottom: 10px;
@@ -89,14 +100,15 @@ td,th,thead{
 
 #formEmail{
 /*margin-left: 15vw;*/
-  text-align: center;
-  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 /* Style the form - display items horizontally */
 .form-inline {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+text-align: center;
 }
 
 /* Add some margins for each label */
