@@ -39,7 +39,7 @@
       <recent name="$PROJECT_DIR$/static/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Code">
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="experience.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Code/templates/experience.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -122,6 +122,8 @@
       <workItem from="1583016129180" duration="5083000" />
       <workItem from="1583096700027" duration="1777000" />
       <workItem from="1583190475348" duration="33000" />
+      <workItem from="1583630974931" duration="27000" />
+      <workItem from="1586577297614" duration="116000" />
     </task>
     <servers />
   </component>
@@ -129,6 +131,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2580" y="-197" key="#Code" timestamp="1586624782594">
+      <screen x="1440" y="-330" width="2560" height="1005" />
+    </state>
+    <state x="2580" y="-197" key="#Code/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1586624782594" />
     <state x="2334" y="-212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582691287826">
       <screen x="1440" y="-330" width="2560" height="1005" />
     </state>
@@ -142,43 +148,43 @@
     </state>
     <state x="3107" y="-56" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582858556274" />
     <state x="3107" y="-59" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688394250" />
-    <state width="1708" height="216" key="GridCell.Tab.0.bottom" timestamp="1583190508128">
+    <state width="1619" height="216" key="GridCell.Tab.0.bottom" timestamp="1586577442825">
       <screen x="1440" y="-330" width="2560" height="1005" />
     </state>
     <state width="668" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582674684316" />
     <state width="1398" height="32" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1583021770844" />
     <state width="1398" height="266" key="GridCell.Tab.0.bottom/1440.-330.2560.1005/0.23.1440.877@0.23.1440.877" timestamp="1583097272627" />
-    <state width="1708" height="216" key="GridCell.Tab.0.bottom/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1583190508128" />
+    <state width="1619" height="216" key="GridCell.Tab.0.bottom/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1586577442825" />
     <state width="2092" height="235" key="GridCell.Tab.0.bottom/1440.-330.2560.1057/0.23.1440.828@1440.-330.2560.1057" timestamp="1582866789207" />
     <state width="1459" height="168" key="GridCell.Tab.0.bottom/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582694899951" />
     <state width="1219" height="375" key="GridCell.Tab.0.bottom/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902226" />
-    <state width="1708" height="216" key="GridCell.Tab.0.center" timestamp="1583190508128">
+    <state width="1619" height="216" key="GridCell.Tab.0.center" timestamp="1586577442824">
       <screen x="1440" y="-330" width="2560" height="1005" />
     </state>
     <state width="668" height="181" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582674684316" />
     <state width="1398" height="32" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1583021770843" />
     <state width="1398" height="266" key="GridCell.Tab.0.center/1440.-330.2560.1005/0.23.1440.877@0.23.1440.877" timestamp="1583097272625" />
-    <state width="1708" height="216" key="GridCell.Tab.0.center/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1583190508128" />
+    <state width="1619" height="216" key="GridCell.Tab.0.center/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1586577442824" />
     <state width="2092" height="235" key="GridCell.Tab.0.center/1440.-330.2560.1057/0.23.1440.828@1440.-330.2560.1057" timestamp="1582866789207" />
     <state width="1459" height="168" key="GridCell.Tab.0.center/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582694899947" />
     <state width="1219" height="375" key="GridCell.Tab.0.center/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902223" />
-    <state width="1708" height="216" key="GridCell.Tab.0.left" timestamp="1583190508128">
+    <state width="1619" height="216" key="GridCell.Tab.0.left" timestamp="1586577442823">
       <screen x="1440" y="-330" width="2560" height="1005" />
     </state>
     <state width="668" height="181" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582674684315" />
     <state width="1398" height="32" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1583021770843" />
     <state width="1398" height="266" key="GridCell.Tab.0.left/1440.-330.2560.1005/0.23.1440.877@0.23.1440.877" timestamp="1583097272624" />
-    <state width="1708" height="216" key="GridCell.Tab.0.left/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1583190508128" />
+    <state width="1619" height="216" key="GridCell.Tab.0.left/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1586577442823" />
     <state width="2092" height="235" key="GridCell.Tab.0.left/1440.-330.2560.1057/0.23.1440.828@1440.-330.2560.1057" timestamp="1582866789207" />
     <state width="1459" height="168" key="GridCell.Tab.0.left/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582694899946" />
     <state width="1219" height="375" key="GridCell.Tab.0.left/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902220" />
-    <state width="1708" height="216" key="GridCell.Tab.0.right" timestamp="1583190508128">
+    <state width="1619" height="216" key="GridCell.Tab.0.right" timestamp="1586577442824">
       <screen x="1440" y="-330" width="2560" height="1005" />
     </state>
     <state width="668" height="181" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582674684316" />
     <state width="1398" height="32" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1583021770844" />
     <state width="1398" height="266" key="GridCell.Tab.0.right/1440.-330.2560.1005/0.23.1440.877@0.23.1440.877" timestamp="1583097272626" />
-    <state width="1708" height="216" key="GridCell.Tab.0.right/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1583190508128" />
+    <state width="1619" height="216" key="GridCell.Tab.0.right/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1586577442824" />
     <state width="2092" height="235" key="GridCell.Tab.0.right/1440.-330.2560.1057/0.23.1440.828@1440.-330.2560.1057" timestamp="1582866789207" />
     <state width="1459" height="168" key="GridCell.Tab.0.right/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582694899948" />
     <state width="1219" height="375" key="GridCell.Tab.0.right/1440.-353.2560.1080/0.23.1440.828@1440.-353.2560.1080" timestamp="1582688902225" />
@@ -214,18 +220,18 @@
       <screen x="1440" y="-353" width="2560" height="1080" />
     </state>
     <state width="1219" height="375" key="GridCell.Tab.2.right/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688906382" />
-    <state x="641" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1583096723180">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="2580" y="12" key="com.intellij.ide.util.TipDialog" timestamp="1583630974326">
+      <screen x="1440" y="-330" width="2560" height="1005" />
     </state>
     <state x="641" y="305" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1583016177751" />
     <state x="794" y="247" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1582670561641" />
     <state x="641" y="322" key="com.intellij.ide.util.TipDialog/1440.-330.2560.1005/0.23.1440.877@0.23.1440.877" timestamp="1583096723180" />
-    <state x="2580" y="12" key="com.intellij.ide.util.TipDialog/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1582919426380" />
+    <state x="2580" y="12" key="com.intellij.ide.util.TipDialog/1440.-330.2560.1005/0.23.1440.877@1440.-330.2560.1005" timestamp="1583630974326" />
     <state x="2580" y="30" key="com.intellij.ide.util.TipDialog/1440.-330.2560.1057/0.23.1440.828@1440.-330.2560.1057" timestamp="1582698682395" />
     <state x="2852" y="-82" key="com.intellij.ide.util.TipDialog/1440.-353.2560.1080/0.0.1440.900@1440.-353.2560.1080" timestamp="1582688996980" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Code$Code.coverage" NAME="Code Coverage Results" MODIFIED="1583190478748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Code$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1582691236398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Code$Code.coverage" NAME="Code Coverage Results" MODIFIED="1586577301202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Code$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1586624784670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
