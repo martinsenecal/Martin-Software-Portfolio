@@ -1,6 +1,29 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, redirect, flash
+from flask_sqlalchemy import SQLAlchemy
+from forms import LoginForm  # Import Class Login
+
 
 app = Flask(__name__)
+
+# Secret Key for Login:
+app.config['SECRET_KEY'] = 'SDF3W478_HS3ish34'
+# We will be using SQL Lite since it's the easiest.
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+
+
+
+posts = [
+    {'author': 'Martin Senecal',
+     'title': 'My First Blog Post',
+     'content': 'This the first content of my Blog',
+     'date_posted': 'April 11, 2020'
+     },
+    {'author': 'Martin Senecal',
+     'title': 'My Second Article',
+     'content': 'This the second article of my Blog',
+     'date_posted': 'April 13, 2020'
+     }
+]
 
 
 @app.route('/about')
@@ -33,9 +56,22 @@ def connect():
     return render_template("connect.html")
 
 
-@app.route('/chatbot')
-def chatbot():
-    return render_template("chatbot.html")
+@app.route('/blog')
+def blog():
+    return render_template("blog.html", posts=posts)
+
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    form = LoginForm()  # Create Object Login
+    if form.validate_on_submit():
+        if form.email.data == 'admin@martin.com' and form.password.data == 'password':
+            flash('You have been logged in!', 'success')  # (message, bootstrap class)
+            return redirect(url_for('homepage'))
+        else:
+            flash('Login Unsuccessful. Please check username and password', 'danger')
+
+    return render_template('login.html', form=form)
 
 
 if __name__ == '__main__':

@@ -18,10 +18,12 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e319096bd7.js" crossorigin="anonymous"></script>
-    <!-- My own CSS Files-->
-    <link rel="stylesheet" href="/static/css/basedesign.css">
 
-    <link rel="stylesheet" href="/static/css/extradesign.css">
+
+    <!-- My own CSS Files-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/basedesign.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/extradesign.css') }}">
+
 
     {% block css %}{% endblock %}
 </head>
@@ -40,16 +42,16 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="{{ url_for('homepage') }}">
                     <i class="fas fa-home"></i>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url_for('about') }}">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/skills">Skills</a>
+                <a class="nav-link" href="{{ url_for('skills') }}">Skills</a>
             </li>
 
             <!--/routename#idname -->
@@ -59,21 +61,21 @@
                     Experience
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/experience#education">Education</a>
+                    <a class="dropdown-item" href="{{ url_for('education') }}">Education</a>
                     <a class="dropdown-item" href="/experience#work">Work</a>
                     <a class="dropdown-item" href="/experience#academicsocieties">Academic Societies</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/projects">Projects</a>
+                    <a class="dropdown-item" href="{{ url_for('projects') }}">Projects</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/connect">Connect</a>
+                <a class="nav-link" href="{{ url_for('connect') }}">Connect</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
 
 
-            <a href="static/martin-resume.pdf">
+            <a href="{{ url_for('static',filename='martin-resume.pdf') }}">
                 <button type="button" class="btn btn-secondary">My Resume</button>
             </a>
 
@@ -81,8 +83,26 @@
     </div>
 </nav>
 
-{% block body %}{% endblock %}
+<!-- Flash Message -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
 
+        {% endfor %}
+
+    {% endif %}
+
+{% endwith %}
+<!-- End Flash Messages -->
+
+
+<div class="container">
+    {% block body %}
+    {% endblock %}
+</div>
 
 <!-- Footer -->
 
@@ -132,8 +152,11 @@
 
 
 <div class="footer-copyright text-center py-2">
-    <a href="https://github.com/martinsenecal">
+    <a href="https://github.com /martinsenecal">
         <p id="footertext"> © 2020 Copyright: Designed & Built by Martin Senécal </p>
+    </a>
+    <a href="{{ url_for('login') }}">
+       Admin Login
     </a>
 </div>
 

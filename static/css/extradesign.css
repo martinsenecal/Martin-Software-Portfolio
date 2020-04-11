@@ -92,7 +92,7 @@ td, th, thead {
     text-align: center;
 }
 
-#btnchatbot {
+#btnblog {
     background-color: white;
     color: black;
     border: 2px solid #004aad;
@@ -103,7 +103,7 @@ td, th, thead {
 
 }
 
-#btnchatbot:hover {
+#btnblog:hover {
     background-color: #004aad;
     color: white;
 }
