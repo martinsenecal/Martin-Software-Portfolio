@@ -12,26 +12,33 @@
 
     <div class="container">
         <header id="chatbotheader">
-            <h4>Marty: ChatBot</h4>
+            <h4>Martin's Blog</h4>
             <p class="lead text-dark">
-                Instructions: If you're lost, just write <code>!help </code>and I'll show you the list of the things I
-                can do!</p>
+               Here are some blog posts from myself and from my previous teammates.</p>
         </header>
 
+        {% if current_user.is_authenticated %}
+            <a  class="btn btn-outline-primary"href="{{ url_for('new_post') }}">
+                Create New Post
+            </a>
+            <br>
+            <br>
+        {% endif %}
 
+        {% for post in posts %}
+            <article class="media content-section">
+                <img class="rounded-circle article-img"
+                     src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2 text-primary" href="#">{{ post.author.username }}</a>
+                        <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+                    </div>
+                    <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
+                    <p class="article-content">{{ post.content }}</p>
+                </div>
+            </article>
+        {% endfor %}
 
-    {% for post in posts %}
-         <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted }}</small>
-            </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-          </div>
-        </article>
-    {% endfor %}
-
-     </div>
+    </div>
 {% endblock body %}

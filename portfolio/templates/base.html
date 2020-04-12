@@ -73,7 +73,9 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-
+             <a href="{{ url_for('blog') }}">
+                <button type="button" class="btn btn-outline-info mr-2">My Blog</button>
+            </a>
 
             <a href="{{ url_for('static',filename='martin-resume.pdf') }}">
                 <button type="button" class="btn btn-secondary">My Resume</button>
@@ -155,9 +157,22 @@
     <a href="https://github.com /martinsenecal">
         <p id="footertext"> © 2020 Copyright: Designed & Built by Martin Senécal </p>
     </a>
-    <a href="{{ url_for('login') }}">
-       Admin Login
-    </a>
+
+
+    {% if current_user.is_authenticated %}
+        <a class="btn btn-outline-warning" href="{{ url_for('admin') }}">
+            Admin Tools
+        </a>
+        <a class="btn btn-outline-danger" href="{{ url_for('logout') }}">
+            Admin LogOut
+        </a>
+    {% else %}
+        <a class="btn btn-outline-danger" href="{{ url_for('login') }}">
+            Admin Login
+        </a>
+    {% endif %}
+
+
 </div>
 
 </footer>
