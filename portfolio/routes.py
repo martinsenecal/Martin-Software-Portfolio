@@ -21,7 +21,8 @@ def homepage():
 
 @app.route('/skills')
 def skills():
-    return render_template("skills.html")
+    skills_content = Skill.query.all()
+    return render_template("skills.html", skills=skills_content)
 
 
 @app.route('/experience')
@@ -121,6 +122,7 @@ def delete_post(post_id):
 @app.route("/admin", methods=['GET', 'POST'])
 @login_required
 def admin():
+    users = User.query.all()
     form = UpdateAdminForm()
     if form.validate_on_submit():
         if form.picture.data:
@@ -128,14 +130,20 @@ def admin():
             current_user.image_file = picture_file
         current_user.username = form.username.data
         current_user.email = form.email.data
+        if form.skillName.data != "":
+            skill = Skill(type='Soft', content=form.skillName.data)
+            db.session.add(skill)
         db.session.commit()
         flash('Your account has been updated!', 'success')
         return redirect(url_for('admin'))
     elif request.method == 'GET':
         form.username.data = current_user.username
         form.email.data = current_user.email
+        form.skillName.data = ""
+
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
-    return render_template('admin.html', image_file=image_file, form=form)
+
+    return render_template('admin.html', image_file=image_file, form=form, users=users)
 
 
 def save_picture(form_picture):

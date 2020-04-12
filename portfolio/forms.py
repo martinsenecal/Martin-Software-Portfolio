@@ -26,6 +26,7 @@ class UpdateAdminForm(FlaskForm):
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
     picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])
+    skillName = StringField('Add a soft-skill:', validators=[Length(min=0, max=78)])
     submit = SubmitField('Update')
 
     def validate_username(self, username):

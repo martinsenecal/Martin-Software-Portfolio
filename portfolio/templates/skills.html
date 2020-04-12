@@ -77,24 +77,26 @@
 
 
             <h5>Soft Skills</h5>
-            <table class="table table-hover">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Bilingual
+                    Communication <em><strong>(French/English)</strong></em></a>
 
-                <tbody>
-                <tr>
-                    <td>Leadership</td>
-                    <td>Bilingual Communication <em><strong>(French/English)</strong></em></td>
+                {% for skill in skills %}
+                    {% if loop.index%2==0 %}
+                        <a href=""
+                           class="list-group-item list-group-item-action list-group-item-primary">{{ skill.content }}</a>
+                    {% else %}
+                        <a href=""
+                           class="list-group-item list-group-item-action list-group-item-secondary"> {{ skill.content }} </a>
+                    {% endif %}
 
-                </tr>
-                <tr>
-                    <td>Creativity</td>
-                    <td>Discipline</td>
-
-                </tr>
+                {% endfor %}
 
 
-                </tbody>
-            </table>
+            </div>
         </div>
     </div>
+
+
 
 {% endblock %}
