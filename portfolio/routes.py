@@ -3,9 +3,21 @@ import secrets  # for Random String.
 from PIL import Image  # Pillow resize pictures to take less space in DB (Image is a class from Pillow Library)
 from flask import url_for, render_template, redirect, flash, request, abort
 from portfolio import app, db, bcrypt
-from portfolio.forms import LoginForm, UpdateAdminForm, PostForm  # Import Class Login
+from portfolio.forms import LoginForm, UpdateAdminForm, PostForm, ResumeForm  # Import Class Login
 from portfolio.models import Post, Skill, User  # We need to put it here, since need to create db before.
 from flask_login import login_user, current_user, logout_user, login_required  # Function that come from login manager.
+
+from flask_mail import Mail, Message
+
+mail_settings = {
+    "MAIL_SERVER": 'smtp.gmail.com',
+    "MAIL_PORT": 465,
+    "MAIL_USE_TLS": False,
+    "MAIL_USE_SSL": True,
+}
+
+app.config.update(mail_settings)
+mail = Mail(app)
 
 
 @app.route('/about')
@@ -35,9 +47,20 @@ def projects():
     return render_template("projects.html")
 
 
-@app.route('/connect')
+@app.route("/connect", methods=['GET', 'POST'])
 def connect():
-    return render_template("connect.html")
+    formResume = ResumeForm()
+    if formResume.validate_on_submit():
+        email = formResume.email.data
+        with app.app_context():
+            msg = Message(subject="Martin - Resume (Software Engineering Student)",
+                          sender=app.config.get("MAIL_USERNAME"),
+                          recipients=[email],
+                          body="Hello! I'm glad you ask for my resume. Here is the link: www.google.com")
+            mail.send(msg)
+        flash("The resume was sent! Let's connect!", 'success')
+        return redirect(url_for('connect'))
+    return render_template('connect.html', formResume=formResume)
 
 
 @app.route('/blog')

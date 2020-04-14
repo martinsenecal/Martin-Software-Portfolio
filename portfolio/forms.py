@@ -20,6 +20,12 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Login')
 
 
+class ResumeForm(FlaskForm):
+    email = StringField('Your Email',
+                        validators=[DataRequired(), Email()])
+    submit = SubmitField('Submit')
+
+
 class UpdateAdminForm(FlaskForm):
     username = StringField('Username',
                            validators=[DataRequired(), Length(min=2, max=20)])

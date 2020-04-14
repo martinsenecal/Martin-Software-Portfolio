@@ -4,6 +4,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 
 app = Flask(__name__)
+
 # Secret Key
 app.config['SECRET_KEY'] = 'SDF3W478_HS3ish34'
 # Database
@@ -17,3 +18,5 @@ login_manager.login_message_category = 'info'  # Style for Error Message - alrea
 
 # Avoid Circular Import
 from portfolio import routes
+
+

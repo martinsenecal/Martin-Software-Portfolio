@@ -17,14 +17,24 @@
                     enter your email, and I will send it to you right away.</p>
 
                 <div id="formEmail">
-                    <form class="form-inline">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Enter email" name="email">
+                    <form method="POST" action="">
+                        {{ formResume.hidden_tag() }}
+                        <div class="form-inline">
+                            {{ formResume.email.label(class="form-control-label") }}
+                            {% if formResume.email.errors %}
+                                {{ formResume.email(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in formResume.email.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ formResume.email(class="form-control form-control-lg email") }}
+                            {% endif %}
 
-                        <button type="submit">Submit</button>
+                             {{ formResume.submit(class="btn btn-outline-primary") }}
+                        </div>
 
-
-                    </form>
                 </div>
 
                 <p class="lead font-weight-normal text-justify">If you are curious or want to know more about me, don't
