@@ -42,6 +42,11 @@ def education():
     return render_template("experience.html")
 
 
+@app.route('/egg')
+def easteregg():
+    return render_template("game.html")
+
+
 @app.route('/projects')
 def projects():
     return render_template("projects.html")

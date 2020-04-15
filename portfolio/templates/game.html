@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/egg.css') }}">
+
+{% endblock css %}
+
+{% block title %} {{ super() }} - Easter Egg {% endblock %}
+{% block body %}
+
+    <div class="jumbotron my-4">
+        <h4 class="display-6 text-dark">Easter Egg: Click on any dot!</h4>
+        <a href="{{ url_for('homepage') }}" class=" btn btn-primary">Go back to Home Page</a>
+    </div>
+
+    <div class="containerAnimation">
+        <div class="egg-container">
+            <div id="animation" class="animation"></div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const animation = document.getElementById('animation'); //block scope and can't be re-assigned
+        const circlesArr = []; //store all the circle (array)
+        let rows = 15;
+        let cols = 15;
+
+        // create the circles
+        for (let i = 0; i < rows; i++) {
+            circlesArr[i] = []; //Array of Array
+            for (let j = 0; j < cols; j++) {
+                const circle = document.createElement('div'); //Create the single circle.
+                circle.classList.add('circle'); //Add Class for styling
+                animation.appendChild(circle); //Add it inside container
+                circlesArr[i].push(circle); //Add it inside the array.
+            }
+        }
+
+        //Array of Array to add Click Event
+        circlesArr.forEach((cols, i) => {
+            cols.forEach((circle, j) => {
+                circle.addEventListener('click', () => {
+                    growCircles(i, j); // Function to grow the different circles.
+                });
+            });
+        });
+
+        function growCircles(i, j) {
+            if (circlesArr[i] && circlesArr[i][j]) {
+                if (!circlesArr[i][j].classList.contains('grow')) {
+                    circlesArr[i][j].classList.add('grow'); //CSS to grow the circle
+                    //Recursion to call the different circle that are near each other.
+                    setTimeout(() => { //Delays to make sure not everything do the effect so fast.
+                        growCircles(i - 1, j)
+                        growCircles(i + 1, j)
+                        growCircles(i, j - 1)
+                        growCircles(i, j + 1)
+                    }, 100)
+
+                    //Remove the effect after some time (300 milliseconds)
+                    setTimeout(() => {
+                        circlesArr[i][j].classList.remove('grow');
+                    }, 300);
+                }
+            }
+        }
+
+    </script>
+
+{% endblock %}
