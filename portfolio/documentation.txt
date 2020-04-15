@@ -1,0 +1,44 @@
+Here is the documentation of my project made with Flask:
+
+Architecture:
+    Portfolio folder have all of the codes that we need when we call run.py.
+    VENV is my Virtual Environment where I installed all of the different Flask Packages/Class.
+    run.py is the file that we have to call when we want to run the program.
+
+    Inside Portfolio Folder:
+        Static folder: contains the css files, the static images files to run the website, my resume and the folder that
+        is containing all the different pictures of the users that log-IN.
+
+        Templates Folder: contains all the different html files that we need with our routes. None of them are static.
+            About: Page that contains some information about me (general stuff)
+
+            Admin: Page that we need to log-in before accessing it. If a user don't have access, they will be re-directed
+            to the login page before having access to it. Here, I can change information about the current user that is log-in,
+            but I can also see some admin information like all the users that are connected to the website. I can also add some
+            new soft skills with the Form. This information will be automatically update and change in all the website.
+
+            Base: Base page for Flask and Jinja Syntax. Here is the basis of how my html page are structured.
+
+            Blog: Blog Page where users can see all the different posts that users are writing. If a user is the admin, he will see
+            some features that a regular user of the website won't be able to see.
+
+            Connect: Here is the page that users can go to contact me. They can also write their email here, and I will automatically send
+            them my resume via email by using Flask-Mail.
+
+            Experience: Timeline of all my experiences.
+            Game: Easter Egg made with Vanilla-Javascript. The only way to access the page is by writing: localhost:5000/egg
+            Home: Landing Page of the website with a Hello Message
+            Login: Verification if someone has access to the website. We do it dynamically by using back-end and front-end tools.
+            I am also making sure that the user info is store in the database and encrypting the password using bcrypt (so everything is safe).
+
+            New_Post: Route that is only accessible if admin is connect. Will be able to create a new post.
+            Post: Route that is only accessible if admin is connect. Will be able to modify/delete a old post.
+            Projects: Page that is showing some of my past projects.
+            Skills: Page that is showing some of my skills and also using a dynamic list (skills are store in a database),
+            so I can add some new skills if I'm login.
+
+        __init__.py The app is create here and this is where Routes is Called. I am also configuring a lot of stuff here.
+        forms.py    File that is storing all the different forms (using Flask-Form)
+        models.py   Taking Care of the database and creating the structure of it by having different class.
+        routes.py   File where all the different routes are, and also taking care of some back-end stuff.
+        site.db:    I am using SQLAlchemy for the database with SQlite.
