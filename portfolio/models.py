@@ -3,6 +3,8 @@ from portfolio import db, login_manager
 from flask_login import UserMixin  # Methods to help us deal with sessions.
 
 
+# Models is a Python file to take care of the Database and creating different models (class) to store it inside.
+
 # Extension to Help Login Manager
 @login_manager.user_loader
 def load_user(user_id):
@@ -10,6 +12,8 @@ def load_user(user_id):
 
 
 # Creation of Models for Database (similar to Class)
+
+# Creation of User Class
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)  # Way to Identify User.
     username = db.Column(db.String(20), unique=True, nullable=False)  # Unique Username and Mandatory.
@@ -22,6 +26,7 @@ class User(db.Model, UserMixin):
         return f"User('{self.username}', '{self.email}', '{self.image_file}')"
 
 
+# Creation of Post Class
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
@@ -33,6 +38,7 @@ class Post(db.Model):
         return f"Post('{self.title}', '{self.date_posted}')"
 
 
+# Creation of Skill Class
 class Skill(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     type = db.Column(db.String(15), nullable=False)

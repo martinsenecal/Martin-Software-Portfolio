@@ -1,3 +1,4 @@
+# Import
 import os  # for extension of files type.
 import secrets  # for Random String.
 from PIL import Image  # Pillow resize pictures to take less space in DB (Image is a class from Pillow Library)
@@ -6,9 +7,9 @@ from portfolio import app, db, bcrypt
 from portfolio.forms import LoginForm, UpdateAdminForm, PostForm, ResumeForm  # Import Class Login
 from portfolio.models import Post, Skill, User  # We need to put it here, since need to create db before.
 from flask_login import login_user, current_user, logout_user, login_required  # Function that come from login manager.
-
 from flask_mail import Mail, Message
 
+# Flask-Mail Setup
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
     "MAIL_PORT": 465,
@@ -19,6 +20,8 @@ mail_settings = {
 app.config.update(mail_settings)
 mail = Mail(app)
 
+
+# Routes
 
 @app.route('/about')
 def about():
@@ -33,8 +36,8 @@ def homepage():
 
 @app.route('/skills')
 def skills():
-    skills_content = Skill.query.all()
-    return render_template("skills.html", skills=skills_content)
+    skills_content = Skill.query.all()  # Query of all the skills in the database
+    return render_template("skills.html", skills=skills_content)  # Returning skills content inside the templates
 
 
 @app.route('/experience')
@@ -54,7 +57,7 @@ def projects():
 
 @app.route("/connect", methods=['GET', 'POST'])
 def connect():
-    formResume = ResumeForm()
+    formResume = ResumeForm()  # Creation of the Form
     if formResume.validate_on_submit():
         email = formResume.email.data
         with app.app_context():
@@ -70,8 +73,8 @@ def connect():
 
 @app.route('/blog')
 def blog():
-    posts = Post.query.all()
-    return render_template("blog.html", posts=posts)
+    posts = Post.query.all()  # Query of all the posts in the database
+    return render_template("blog.html", posts=posts)  # Returning posts content inside the templates
 
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -93,7 +96,7 @@ def login():
 
 @app.route("/logout")
 def logout():
-    logout_user()
+    logout_user()  # Method from LoginManager
     return redirect(url_for('homepage'))
 
 
@@ -110,7 +113,7 @@ def new_post():
     return render_template('new_post.html', form=form, legend='New Post')
 
 
-@app.route("/post/<int:post_id>")
+@app.route("/post/<int:post_id>")  # Custom Route depending on the post.
 def post(post_id):
     post = Post.query.get_or_404(post_id)
     return render_template('post.html', post=post)
@@ -129,15 +132,17 @@ def update_post(post_id):
         db.session.commit()  # No need to add since they are already in DB
         flash('Your post has been updated!', 'success')
         return redirect(url_for('blog', post_id=post.id))
-    elif request.method == 'GET':
+    elif request.method == 'GET':  # showing data of the users in the fields.
         form.title.data = post.title
         form.content.data = post.content
-    return render_template('new_post.html', form=form, legend='Update Post')
+    return render_template('new_post.html', form=form,
+                           legend='Update Post')  # Legend is useful so we can use the same html page for many things.
 
 
 @app.route("/post/<int:post_id>/delete", methods=['POST'])
 @login_required
 def delete_post(post_id):
+    # Verification to make sure the user is allowed to delete the post.
     post = Post.query.get_or_404(post_id)
     if post.author != current_user:
         abort(403)
@@ -153,28 +158,36 @@ def admin():
     users = User.query.all()
     form = UpdateAdminForm()
     if form.validate_on_submit():
+        # Resizing of the User Picture with Pillow
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
             current_user.image_file = picture_file
+
         current_user.username = form.username.data
         current_user.email = form.email.data
+
+        # If Skill field is empty, it won't be add to the DB
         if form.skillName.data != "":
             skill = Skill(type='Soft', content=form.skillName.data)
             db.session.add(skill)
+
         db.session.commit()
         flash('Your account has been updated!', 'success')
         return redirect(url_for('admin'))
     elif request.method == 'GET':
+        # Show some data already in the fields when user is making a get-request.
         form.username.data = current_user.username
         form.email.data = current_user.email
         form.skillName.data = ""
 
-    image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
+    image_file = url_for('static',
+                         filename='profile_pics/' + current_user.image_file)  # Location of the Image in Static Folder
 
     return render_template('admin.html', image_file=image_file, form=form, users=users)
 
 
 def save_picture(form_picture):
+    # Resizing Picture and Creation of a New Name to make sure we don't have 2 images with same name.
     random_hex = secrets.token_hex(8)
     _, f_ext = os.path.splitext(form_picture.filename)  # _ is a value that we don't need.
     picture_filename = random_hex + f_ext

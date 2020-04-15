@@ -6,6 +6,9 @@ from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationE
 from portfolio.models import User
 
 
+# Creation of all the forms class that will be used in the template files. (WTForms)
+# Useful so we can use some validators for the back-end.
+
 class PostForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     content = TextAreaField('Content', validators=[DataRequired()])
@@ -35,12 +38,14 @@ class UpdateAdminForm(FlaskForm):
     skillName = StringField('Add a soft-skill:', validators=[Length(min=0, max=78)])
     submit = SubmitField('Update')
 
+    # Make sure the Username is Valid
     def validate_username(self, username):
         if username.data != current_user.username:
             user = User.query.filter_by(username=username.data).first()
             if user:
                 raise ValidationError('That username is taken. Please choose a different one.')
 
+    # Make sure the Email is Valid
     def validate_email(self, email):
         if email.data != current_user.email:
             user = User.query.filter_by(email=email.data).first()
