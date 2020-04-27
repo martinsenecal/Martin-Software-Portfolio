@@ -31,8 +31,10 @@ def create_app(config_class=Config):
     from portfolio.users.routes import users
     from portfolio.posts.routes import posts
     from portfolio.main.routes import main
+    from portfolio.errors.handlers import errors
     app.register_blueprint(main)
     app.register_blueprint(users)
     app.register_blueprint(posts)
+    app.register_blueprint(errors)
 
     return app
