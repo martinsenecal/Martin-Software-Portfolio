@@ -1,11 +1,11 @@
 import os
 
+
 class Config:
     # Secret Key
-    SECRET_KEY = 'SDF3W478_HS3ish34'
-
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     # Database
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
 
     # Flask-Mail Setup
 
@@ -13,9 +13,6 @@ class Config:
     MAIL_PORT = 465,
     MAIL_USE_TLS = False,
     MAIL_USE_SSL = True,
-    # My Email
-    MAIL_USERNAME = 'test@gmail.com',
-    MAIL_PASSWORD = 'TODO'  # ToDo: UseOS
-
-
-
+    # Add your Email Info Here:
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
