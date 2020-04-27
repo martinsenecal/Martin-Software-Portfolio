@@ -48,12 +48,13 @@ def connect():
     formResume = ResumeForm()  # Creation of the Form
     if formResume.validate_on_submit():
         email = formResume.email.data
-        with current_app.app_context():
-            msg = Message(subject="Martin - Resume (Software Engineering Student)",
-                          sender=current_app.config.get("MAIL_USERNAME"),
-                          recipients=[email],
-                          body="Hello! I'm glad you ask for my resume. Here is the link: www.google.com")
-            mail.send(msg)
+
+        msg = Message(subject="Martin - Resume (Software Engineering Student)",
+                      sender=current_app.config.get("MAIL_USERNAME"),
+                      recipients=[email],
+                      body="Hello! I'm glad you ask for my resume. Here is the link: www.google.com")
+        mail.send(msg)
+
         flash("The resume was sent! Let's connect!", 'success')
         return redirect(url_for('main.connect'))
     return render_template('connect.html', formResume=formResume)
