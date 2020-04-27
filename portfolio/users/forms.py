@@ -1,18 +1,9 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
-from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
+from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms.validators import DataRequired, Length, Email, ValidationError
 from portfolio.models import User
-
-
-# Creation of all the forms class that will be used in the template files. (WTForms)
-# Useful so we can use some validators for the back-end.
-
-class PostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
-    content = TextAreaField('Content', validators=[DataRequired()])
-    submit = SubmitField('Post')
 
 
 class LoginForm(FlaskForm):
@@ -21,12 +12,6 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
-
-
-class ResumeForm(FlaskForm):
-    email = StringField('Your Email',
-                        validators=[DataRequired(), Email()])
-    submit = SubmitField('Submit')
 
 
 class UpdateAdminForm(FlaskForm):

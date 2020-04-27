@@ -1,4 +1,6 @@
-from portfolio import app
+from portfolio import create_app
+
+app = create_app()
 
 # Initial step to run the program.
 if __name__ == '__main__':

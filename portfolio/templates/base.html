@@ -42,16 +42,16 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('homepage') }}">
+                <a class="nav-link" href="{{ url_for('main.homepage') }}">
                     <i class="fas fa-home"></i>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('about') }}">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url_for('main.about') }}">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('skills') }}">Skills</a>
+                <a class="nav-link" href="{{ url_for('main.skills') }}">Skills</a>
             </li>
 
             <!--/routename#idname -->
@@ -61,19 +61,19 @@
                     Experience
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="{{ url_for('education') }}">Education</a>
+                    <a class="dropdown-item" href="{{ url_for('main.education') }}">Education</a>
                     <a class="dropdown-item" href="/experience#work">Work</a>
                     <a class="dropdown-item" href="/experience#academicsocieties">Academic Societies</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{ url_for('projects') }}">Projects</a>
+                    <a class="dropdown-item" href="{{ url_for('main.projects') }}">Projects</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('connect') }}">Connect</a>
+                <a class="nav-link" href="{{ url_for('main.connect') }}">Connect</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-             <a href="{{ url_for('blog') }}">
+             <a href="{{ url_for('posts.blog') }}">
                 <button type="button" class="btn btn-outline-info mr-2">My Blog</button>
             </a>
 
@@ -160,14 +160,14 @@
 
 
     {% if current_user.is_authenticated %}
-        <a class="btn btn-outline-warning" href="{{ url_for('admin') }}">
+        <a class="btn btn-outline-warning" href="{{ url_for('users.admin') }}">
             Admin Tools
         </a>
-        <a class="btn btn-outline-danger" href="{{ url_for('logout') }}">
+        <a class="btn btn-outline-danger" href="{{ url_for('users.logout') }}">
             Admin LogOut
         </a>
     {% else %}
-        <a class="btn btn-outline-danger" href="{{ url_for('login') }}">
+        <a class="btn btn-outline-danger" href="{{ url_for('users.login') }}">
             Admin Login
         </a>
     {% endif %}
