@@ -124,3 +124,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 Code/.idea/workspace.xml
+portfolio/.idea/workspace.xml
+portfolio/.idea/misc.xml
+portfolio/.idea/modules.xml
+portfolio/.idea/portfolio.iml
+portfolio/.idea/vcs.xml
+portfolio/.idea/inspectionProfiles/profiles_settings.xml
+portfolio/.DS_Store
