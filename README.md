@@ -68,6 +68,6 @@ $ pip3 install -r requirements.txt
 
 Reach out to me at one of the following places!
 
-- Linkedin at <a href="https://www.linkedin.com/in/martin-senecal/" target="_blank">`My Linkedin`</a>
+- Linkedin at <a href="https://www.linkedin.com/in/martin-senecal/" target="_blank">`linkedin.com/in/martin-senecal/`</a>
 - Email: <a href="mailto:martinsenecal2000@gmail.com" target="_blank">`martinsenecal2000@gmail.com`</a>
 
