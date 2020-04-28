@@ -1,7 +1,7 @@
 # Martin-SoftwarePortfolio 
 
-> Subtitle or Short Description Goes Here
-> My website is based on my portfolio. This is a convenient way for potential employers to view my work and my projects. It provides them with all my personal information and allows them to easily get in touch with me. Furthermore, with a simple and clean design, viewers can immediately retain the all necessary information. This website contains a few different pages. An about page providing general information about me. A skill page containing a list of all of my qualifications. An experience page displaying a timeline of my past and currents jobs. A blog page describing my current goals. And finally, a get in touch page to allow employers to contact me if they are interested.
+## Description:
+> This is a convenient way for potential employers to view my work and my projects. It provides them with all my personal information and allows them to easily get in touch with me. Furthermore, with a simple and clean design, viewers can immediately retain the all necessary information. This website contains a few different pages. An about page providing general information about me. A skill page containing a list of all of my qualifications. An experience page displaying a timeline of my past and current jobs. A blog page describing my current goals. And finally, a get in touch page to allow employers to contact me if they are interested.
 
 
 > Tech Stack
@@ -12,16 +12,15 @@
 - SQLite
 
 ## Overview of the web app
-- Going into more detail on code and technologies used
 ![](Media/demo1.gif) 
 ![](Media/demo2.gif) 
 
 ## Overview of the Admin Tools
-- Going into more detail on code and technologies used
+- Going into more detail the different tools an admin can have.
 ![](Media/demo3.gif) 
 
 ## Overview of the Blog Features
-- Going into more detail on code and technologies used
+- Going into more detail on the Blog aspect of the website.
 ![](Media/demo4.gif) 
 
 ---
