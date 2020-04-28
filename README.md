@@ -62,6 +62,12 @@ $ sudo python3 -m pip install virtualenv
 ```shell
 $ pip3 install -r requirements.txt
 ```
+
+> Now run the program:
+
+```shell
+$ flask run.py
+```
 ---
 
 ## Support
