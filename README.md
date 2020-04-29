@@ -16,7 +16,7 @@
 ![](Media/demo2.gif) 
 
 ## Overview of the Admin Tools
-- Going into more detail the different tools an admin can have.
+- Going into more detail on the different tools an admin can have.
 ![](Media/demo3.gif) 
 
 ## Overview of the Blog Features
